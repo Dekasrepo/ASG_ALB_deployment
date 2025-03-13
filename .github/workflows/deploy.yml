@@ -33,3 +33,6 @@ jobs:
 
       - name: Apply Terraform changes
         run: terraform apply -auto-approve
+
+      - name: Print Load Balancer DNS Name
+        run: terraform output alb_dns_name
